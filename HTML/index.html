@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta data : data about data -->
+    <meta charset="UTF-8"> <!-- for unicode -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to view this webpage on a mobile device -->
+    <meta name="description" content="Free HTML tutorial for beginners - Bro Code">
+    <meta name="keywords" content="HTML, tutorial, beginners">
+    <meta name="author" content="Mohamad Khaled">
+    <meta http-equiv="refresh" content="30"><!-- set our webpage to automatically refresh after a given amount of seconds -->
     <title>MyFirstWebsite</title>
+    
 </head>
-<body style="background-color: rgb(89, 89, 118);">
-    <h1>This is my website 7 april 2024</h1>
+<body style="background-color: rgb(89, 89, 118); color: whitesmoke;">
+    <h1 style="color: red;">This is the first page : my website 7 april 2024</h1>
     <hr>
-    <h1>i like pizza</h1>    <!-- <h2>i like pizza</h2>    <h3>i like pizza</h3>    <h4>i like pizza</h4>    <h5>i like pizza</h5>    <h6>i like pizza</h6> -->
+    <h1 style="color: rgb(5, 240, 232);">i like pizza</h1>    <!-- <h2>i like pizza</h2>    <h3>i like pizza</h3>    <h4>i like pizza</h4>    <h5>i like pizza</h5>    <h6>i like pizza</h6> -->
     <p>This is some normal text</p>
     <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis debitis eum, tenetur neque dolorum aliquid quos sed rem provident quas blanditiis fugiat. Id, consectetur nulla consequatur magnam porro iste.</p>
-    <p>This Is <b>Normal Text</b></p>
-    <p>This Is <i>Italic Text</i></p>
-    <p>This Is <big>Big Text</big></p>
-    <p>This Is <small>small Text</small></p>
-    <p>This Is <sup>superscript Text</sup></p>
-    <p>This Is <sub>subscript Text</sub></p>
-    <p>This Is <ins>inserted Text</ins></p>
-    <p>This Is <del>deleted Text</del></p>
-    <p>This Is <mark>marked Text</mark></p>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero optio similique soluta quaerat necessitatibus quod dolorem reprehenderit consequatur. Ut nam praesentium, eveniet suscipit sint possimus voluptatibus cumque laboriosam quos aut.</p>
+    <p style="color: #28f005;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis debitis eum, tenetur neque dolorum aliquid quos sed rem provident quas blanditiis fugiat. Id, consectetur nulla consequatur magnam porro iste.</p>
+    <!-- div = defines a division of a document -->
+    <div style="background-color: #444444;">
+        using a div tag here
+        <p>This Is <b>Normal Text</b></p>
+        <p>This Is <i>Italic Text</i></p>
+        <p>This Is <big>Big Text</big></p>
+        <p>This Is <small>small Text</small></p>
+        <p>This Is <sup>superscript Text</sup></p>
+        <p>This Is <sub>subscript Text</sub></p>
+        <p>This Is <ins>inserted Text</ins></p>
+        <p>This Is <del>deleted Text</del></p>
+        <p>This Is <mark>marked Text</mark></p>
+    </div>
+    <!-- span = adds markup to text or portion of a document -->
+    <p style="background-color: #222222; color: red;">
+        using a span tag here <br>
+        <span style="color: whitesmoke;"> ipsum dolor sit amet consectetur adipisicing elit.</span> Libero optio similique soluta quaerat necessitatibus quod dolorem reprehenderit consequatur. Ut nam praesentium, eveniet suscipit sint possimus voluptatibus cumque laboriosam quos aut.</p>
     
     <a href="page2.html" target="_blank" title="this takes you to page 2">page 2</a>
 
@@ -75,5 +87,89 @@
             <td>CLosed</td>
         </tr>
     </table>
+    <a href="https://www.google.com">
+        <button style="background-color: black; color: #00FF00; border-radius: 5px; ">Google</button>   
+    </a>
+    <button disabled>Disabled</button>   
+    
+    <button onclick="doSomething()" style="background-color: black; color: #00FF00;">click me</button> 
+    <p id = "test">Hello</p>
+    <script>
+        function doSomething(){
+            document.getElementById("test").innerHTML = "GoodBye";
+        }
+    </script>
+
+<form action="action_page.php" method="get">
+    <div>
+        <label for="fname">first name:</label>
+        <input type="text" id="fname" name="fname" placeholder="The Leader" required>
+    </div>
+    <br>
+    <div>
+        <label for="lname">last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="MohamadAbuSultan" required>
+    </div>
+    <br>
+    <div>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required maxlength="25">
+    </div>
+    <br>
+    <div>
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" required maxlength="15">
+    </div>
+    <br>
+    <div>
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required maxlength="12">
+    </div>
+    <br>
+    <div>
+        <label for="bdate">birthdate:</label>
+        <input type="date" id="bdate" name="bdate" placeholder="Enter your birthdate" required>
+    </div>
+    <br>
+    <div>
+        <label for="quantity">quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="10000000000000" value="1" required>
+    </div>
+    <br>
+    <div>
+        <label for="title">title: </label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title" value="Mr.">
+
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." name="title" value="PhD.">
+    </div>
+    <br>
+    <div>
+        <label for="payment">payment:</label>
+        <select name="payment" id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="FinishHTMLCourse">FinishHTMLCourse:</label>
+        <input type="checkbox" name="FinishHTMLCourse" id="FinishHTMLCourse">
+    </div>
+    <br>
+    <div>
+        <input type="reset">
+    </div>
+    <br>
+    <div>
+        <input type="submit">
+    </div>
+</form>
 </body>
 </html>
