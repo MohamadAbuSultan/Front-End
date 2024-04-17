@@ -1,0 +1,15 @@
+/* 
+    Inline
+    Internal
+    External
+*/
+body{
+    background-color: rgb(0, 255, 255);
+}
+h1{
+    color: whitesmoke;
+}
+p{
+    background-color: gray;
+    color: whitesmoke;
+}
