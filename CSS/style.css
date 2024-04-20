@@ -8,8 +8,25 @@ body{
 }
 h1{
     color: whitesmoke;
+    font-family: "consolas", sans-serif;
+    /* in case browsers don't support the first font it will use the next font */
 }
 p{
     background-color: gray;
     color: whitesmoke;
+}
+#p1{
+    color: tomato;
+}
+.odd{
+    color: magenta;
+}
+.even{
+    color: blue;
+}
+.font{
+    font-family: "Jacquard 24", "consolas", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-decoration: black overline underline;
 }
