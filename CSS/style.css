@@ -10,10 +10,20 @@ h1{
     color: whitesmoke;
     font-family: "consolas", sans-serif;
     /* in case browsers don't support the first font it will use the next font */
+    border-style: double;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-left-width: 10px;
+    border-left-color: silver;
 }
 p{
     background-color: gray;
     color: whitesmoke;
+    border-style: outset;
+    border-width: 5px;
+    border-color: goldenrod;
+    border-radius: 10px;
+    padding: 10px;
 }
 #p1{
     color: tomato;
