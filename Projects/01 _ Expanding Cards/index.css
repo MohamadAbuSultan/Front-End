@@ -1,0 +1,59 @@
+/* Setting container to flex and width to 80% of view port */
+.container{
+	display: flex;
+	width: 90%;
+    margin: 100px;
+}
+
+/*Adding background image to each section*/
+.one{
+	background: url(/Images/pic1.jpg);
+}
+.two{
+	background: url(/Images/pic2.jpg);
+}
+.three{
+	background: url(/Images/pic3.jpg);
+}
+.four{
+	background: url(/Images/pic1.jpg);
+}
+.five{
+	background: url(/Images/pic1.jpg);
+}
+.six{
+	background: url(/Images/pic1.jpg);
+}
+
+/* Background properties and transition effect to section */
+.section{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	cursor: pointer;
+	flex: 0.2;
+	margin:8px;
+	position: relative;
+	transition: all 0.7s ease-out;
+} 
+
+/* section with active class will grow flex to 3 times */
+.section.active{
+	flex: 3;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
